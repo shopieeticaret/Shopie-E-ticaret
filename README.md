@@ -22,6 +22,9 @@ Ahmet Hakan Çelik
 Bir projede analiz ve tasarım kısmı çok önemlidir.Proje geliştirme aşamasından önce her şeyi hesaplamak ve en ince ayrıntıları belirlemek projenin net başarısı açısından son derece önemlidir. Projemizi geliştirmek için kullanmayı palnladığımız geliştirme modeli bu yüzden Waterfall Metodolojisidir. Kısaca açıklamak gerekirsek Waterfall yazılım metodolojisinin temel felsefesi, proje sürecindeki bir aşamayı tamamlamadan diğer aşamaya geçmemek üzerine kuruludur. Örneğin; analiz aşaması kesin olarak tamamlanmadan tasarım veya geliştirme aşamasına geçilmemelidir vb. <br>
 
 Waterfall metodolojisini anlama,yönetme ve uygulama oldukça basit olduğundan bize avantaj sağlayacağını ve grup üyelerimiz ile belirlediğimiz iş bölümü sırasında kullanacağımız en uygun ve güvenli yöntem olduğunu düşünüyoruz.
+ 
+ ## Projenin Büyümesi ve Geliştirilmesi Hakkında
+ Dünyadaki her şirket veya projede olduğu gibi gelişmek ve pazar hacmini arttırmak veya eldeki ürünü daha iyi hale getirmek için maddi imkanlara ve bu maddi imkanlarla projemizi daha iyi hale getirecek nitelikli insanlara ihtiyacımız var.Bu yüzden bu iş için uygun ve konu hakkında bilgisi olan insanları bizlerle çalışmaya ve gerekli finansal kaynaklara sahip kişileri de bize destek olmaya ve yatırıma davet ediyoruz. E-ticaret sektörünün dünya pazarında önemi büyük olduğundan ve yükselen trendlerden biri olmasından dolayı yatırım yapıcak kişiler için başarı oranı yüksek ve daha güvenilir bir sektör olduğunu vurguluyor, bizimle çalışacak kişilere ise projemizin çalışılabilecek iyi iş imkanlarına sahip olduğunu temin ediyoruz. 
   
  
  ## Kullanılan Teknolojiler
