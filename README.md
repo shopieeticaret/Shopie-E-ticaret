@@ -8,7 +8,6 @@
  - Karşılaşılabilecek herhangi bir porblemde,herhangi bir konuyla alakalı bilgi alma arzusu veya memnuniyetsizlik sonucu oluşabilecek bir durumda müsterilere kaliteli ve basit talimatlardan oluşan bir yardım bölümü ve bu bölümün yetersiz olması durumunda sorunları çözmek adına uygun bir müşteri hizmetleri desteği sunmak.
  
 ## Projede Görev Alan Kişiler,Katkıları ve Çalıştıkları Alanlar 
-<br>
 Hüdanur Ediz
 - Kullanıcı oturumu açma,kayıt olma ve şifreleme işlemlerinin arayüzü ve kodunun tasarlanması <br>
 İrem Atak
