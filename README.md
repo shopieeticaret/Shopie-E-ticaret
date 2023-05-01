@@ -10,7 +10,7 @@
  ## Kullanılan Teknolojiler
  - Javascript
  - Html
- - Css
+ - CSS
  - Django
  - Bootstrap
  
