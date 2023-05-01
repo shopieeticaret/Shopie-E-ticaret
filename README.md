@@ -30,6 +30,7 @@ Waterfall metodolojisini anlama,yönetme ve uygulama oldukça basit olduğundan 
  - CSS
  - Django
  - Bootstrap
+ - SQLite
  
  ## Proje Tanıtım Broşürü
  
