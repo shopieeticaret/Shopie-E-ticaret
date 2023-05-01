@@ -17,6 +17,12 @@ Halil Karataş <br>
 - Müşteri hizmetleri kısmının eklenmesi <br><p>
 Ahmet Hakan Çelik
 - Satın alma işlemleri,iade ve bakiye kullanımı ve bütün bu işlemlerin farklı seçeneklerinin tasarlanması ve kodlanması 
+
+## Yazılım Geliştirme Süreci ve Metodolojisi
+Projemizi geliştirmek için kullanmayı palnladığımız geliştirme modeli Waterfall Metodolojisidir. Kısaca açıklamak gerekirsek Waterfall yazılım metodolojisinin temel felsefesi, proje sürecindeki bir aşamayı tamamlamadan diğer aşamaya geçmemek üzerine kuruludur. Örneğin; analiz aşaması kesin olarak tamamlanmadan tasarım veya geliştirme aşamasına geçilmemelidir vb. <br><br>
+
+Waterfall metodolojisini anlama,yönetme ve uygulama oldukça basit olduğundan bize avantaj sağlayacağını ve grup üyelerimiz ile belirlediğimiz iş bölümü sırasında kullanacağımız en uygun ve güvenli yöntem olduğunu düşünüyoruz.
+  
  
  ## Kullanılan Teknolojiler
  - Javascript
