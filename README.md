@@ -9,12 +9,12 @@
  
 ## Projede Görev Alan Kişiler,Katkıları ve Çalıştıkları Alanlar 
 Hüdanur Ediz
-- Kullanıcı oturumu açma,kayıt olma ve şifreleme işlemlerinin arayüzü ve kodunun tasarlanması <br>
+- Kullanıcı oturumu açma,kayıt olma ve şifreleme işlemlerinin arayüzü ve kodunun tasarlanması <br><p>
 İrem Atak
-- Ürün kategorileme,arama ve karşılaştırma özelliklerinin yapılması <br>
+- Ürün kategorileme,arama ve karşılaştırma özelliklerinin yapılması <br><p>
 Halil Karataş <br>
 - Yardım ve Destek Bölümünün oluşturulması
-- Müşteri hizmetleri kısmının eklenmesi <br>
+- Müşteri hizmetleri kısmının eklenmesi <br><p>
 Ahmet Hakan Çelik
 - Satın alma işlemleri,iade ve bakiye kullanımı ve bütün bu işlemlerin farklı seçeneklerinin tasarlanması ve kodlanması 
  
