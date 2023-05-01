@@ -14,3 +14,9 @@
  - Django
  - Bootstrap
  
+ ##Proje Tanıtım Broşürü
+ 
+![brosur1](https://user-images.githubusercontent.com/73705686/235508784-05a21eb6-d3de-443e-9672-74a83539064c.jpg)
+
+
+![brosur2](https://user-images.githubusercontent.com/73705686/235508809-3d319059-9f89-4f04-ae12-c9216068c9d2.jpg)
