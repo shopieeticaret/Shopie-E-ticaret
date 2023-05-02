@@ -10,6 +10,7 @@
 ## Projede Görev Alan Kişiler,Katkıları ve Çalıştıkları Alanlar 
 Hüdanur Ediz
 - Kullanıcı oturumu açma,kayıt olma ve şifreleme işlemlerinin arayüzü ve kodunun tasarlanması <br><p>
+- Ürün karşılaştırma arayüzü ve kodunun tasarlanması <br><p>
 İrem Atak
 - Ürün kategorileme,arama ve karşılaştırma özelliklerinin yapılması <br><p>
 Halil Karataş <br>
