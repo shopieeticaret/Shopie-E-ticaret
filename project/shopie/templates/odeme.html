@@ -1,0 +1,542 @@
+{% load static %}
+<html>
+    <head>
+      <link rel="stylesheet" href="stil.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">     
+        <style>
+            body{
+            background-color:#F9F6F7;
+            }
+
+            .container1{
+                max-width: 700px;
+                height: 600px;
+                margin: 0 auto;
+                margin-left:80px;
+                margin-top:20px;
+                padding: 20px;
+                background-color: #f9f9f9;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+            }
+
+            .picture{
+                position:absolute;
+                top: 50;
+                right:185;
+                width: 400px;
+                height: 300px;
+    }
+            .picture img{
+                max-width: 100%;
+                max-height: 100%;
+            }  
+
+            .siparis {
+                max-width: 250px;
+                height:250px;
+                margin: 0 auto;
+                margin-left:950px;
+                margin-top:-450px;
+                padding: 20px;
+                background-color: #ededed;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+                text-align:center;
+                }
+
+                .siparis ul {
+                list-style-type: none;
+                text-align:left;
+                font-size: 18px;
+                font-weight: bold;
+                }
+
+               .siparis li {
+                margin-top: 25px;  
+                font-size:14px;
+                }    
+
+               .iletisim{
+                width:100%;
+                height:200px;
+                margin:0 auto;
+                margin-left:0px;
+                margin-top:220px;
+                padding: 20px;
+                background-color: #B27894;
+                border-radius: 7px;  
+                }
+
+                .sipariset {
+                background-color: #B27894;
+                color: #fff;
+                border: none;
+                padding: 13px 30px;
+                border-radius: 4px;
+                cursor: pointer;
+                }    
+
+                .sipariset:hover{
+                    background-color: #20F2F9;
+                }
+
+                .onay{
+                width:10%;
+                height:25px;
+                margin:0 auto;
+                margin-left:1000px;
+                margin-top:-430px;
+                padding: 20px;
+                background-color:#F9F6F7;
+                border-radius: 7px;  
+                }
+
+                .adam{
+                    margin:0 auto;
+                    margin-left:240px;
+                    margin-top:-210px;
+                }
+
+
+                .adam img{
+                    max-width:16%;
+                    max-height:16%;
+                    border-radius:50%;
+                }
+
+                .teslimat{
+                    margin:0 auto;
+                    margin-left:1100px;
+                    margin-top:-13px;
+                }
+
+                .teslimat img{
+                    max-width:72%;
+                    max-height:72%;
+                    border-radius:50%;
+                }
+
+                .guvenli {
+                    margin:0 auto;
+                    margin-left:630px;
+                    margin-top:-140px;
+                }
+
+                .guvenli img{
+                    max-width:35%;
+                    max-height:35%;
+                    border-radius:10%;
+                }
+
+                .shortcut-buttons {
+                display: block;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 25px;
+                }
+
+                .shortcut-buttons a {
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: #B27894;
+                color:white;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+                }
+
+                .shortcut-buttons a:hover {
+                background-color: #20F2F9;
+                }
+
+                .container {
+                max-width: 400px;
+                margin:0 auto;
+                padding: 20px;
+                
+                }
+
+                h1 {
+                text-align: center;
+                }
+
+                form {
+                margin-top: 20px;
+                }
+
+                .form-group {
+                margin-bottom: 15px;
+                }
+
+                label {
+                display: block;
+                font-weight: bold;
+                }
+
+                input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                }
+
+                button[type="submit"] {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                margin-top: 20px;
+                border: none;
+                border-radius: 4px;
+                background-color:#B27894;
+                color: white;
+                font-size: 16px;
+                cursor: pointer;
+                }
+
+                button[type="submit"]:hover {
+                background-color:#20F2F9;
+                }
+
+                .gizlilik-soru {
+                            font-size: small;
+                            margin-bottom: 10px;
+                    } 
+                    
+                .gizlilik-kutu {
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 20px;
+                    } 
+                
+                .sepetim {  
+                    max-width: 600px;
+                    max-height: 70px;
+                    margin: 0 auto;
+                    margin-left:30px;
+                    margin-top:50px;
+                    padding: 20px;
+                    background-color: #f9f9f9;
+                    border: 1px solid #ddd;
+                    border-radius: 10px;
+                    }
+
+                .sepetim h1{
+                    margin: 0 auto;
+                    margin-top:-10px;
+                    margin-left:0px;
+                    }
+
+                    .sepet-baslik {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                    }
+
+                    .sepet-icerik {
+                    overflow-x: auto;
+                    }
+
+                    .sepet-tablo {
+                    width: 100%;
+                    border-collapse: collapse;
+                    }
+
+                    .sepet-tablo th,
+                    .sepet-tablo td {
+                    padding: 10px;
+                    text-align: left;
+                    border-bottom: 1px solid #ddd;
+                    }
+
+                    .urun-adi {
+                    width: 200px;
+                    }
+
+                    .urun-fiyat,
+                    .urun-miktar,
+                    .urun-toplam {
+                    width: 100px;
+                    }
+
+                    .urun-miktar input {
+                    width: 40px;
+                    padding: 5px;
+                    }  
+                    
+                    .bakiye {
+                      max-width: 200px;
+                      max-height:5px;
+                      margin: 0 auto;
+                      margin-left:50px;
+                      margin-top:20px;
+                      padding: 20px;
+                      background-color: #f9f9f9;
+                      border: 1px solid #ddd;
+                      border-radius: 10px;
+                    }
+
+                    .bakiye img{
+                      margin: 0 auto;
+                      max-width:20%;
+                      max-height:20%;
+                      margin-top:-17px;
+                      margin-left:-203px;
+                    }
+
+                    .bakiye h3{
+                      margin: 0 auto;
+                      margin-top:-30px;
+                      margin-left:40px;
+                    }
+
+                    .kutucuk{
+                      position: relative;
+                      left:50px;
+                      top:20px;
+                      border: 1px solid #ddd;
+                      border-radius: 40px;
+                      max-width:230px;
+                      max-height:40px;
+                      margin-bottom:20px;
+                    }
+
+                    .kutucuk-tablo {
+                    width: 100%;
+                    border-collapse: collapse;
+                    }
+
+                    .kutucuk-tablo th,td{
+                    padding: 10px;
+                    text-align: left;
+                    }
+
+                    .bakiye_ekle button{
+                      position: relative;
+                      left:470px;
+                      bottom:150px;
+                      width:160px;
+                    }
+
+                    .bakiye_ekle input{
+                      position: relative;
+                      left:200px;
+                      bottom:162px;
+                      border: 1px solid #ddd;
+                      background-color: #f9f9f9;
+                      border-radius: 40px;
+                      height:40px;
+                      text-size-adjust:35px;
+                    }
+
+                    .bakiye_karti h2{
+                      margin: 0 auto;
+                      margin-top:40px;
+                      margin-right:380px;
+                    }
+                    
+                    </style>            
+    </head>
+    <body>
+        <div  class="container1 shortcut-buttons">
+        <h1 align="center"> Ödeme Seçenekleri</h1>
+        <a href="#section1" onclick="gecis(1)">Başka Bir Kart ile Öde</a>
+        <a href="#section2" onclick="gecis(2)">Mevcut Kart ile Öde</a>
+        <a href="#section3" onclick="gecis(3)">Mevcut Bakiye ile Öde</a>
+        
+            <div id="div1" class="container">
+                <h1>Kart Bilgileri</h1>
+                <form id="myform" method="POST" action="" >
+                    {% csrf_token %}
+                  <div class="form-group">
+                    <label for="card-number">Kart Numarası</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Kart Numaranızı Girin" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="card-name">Kart Üzerindeki İsim</label>
+                    <input type="text" id="card-name" name="card-name" placeholder="Kart Üzerindeki İsminizi Girin" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="expiry-date">Son Kullanma Tarihi</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+                  </div>
+                  <div class="gizlilik-soru">
+                    Gizlilik kurallarını ve satın alma şartlarını kabul ediyorum.   
+                  </div>
+                  <div class="gizlilik-kutu">
+                    <input type="checkbox" id="gizlilikKabul" name="kart" />  
+                  </div>
+            
+                  <button type="submit" onclick="kabulEdildi();">Kartı Ekle</button>
+                </form>
+              </div>  
+              <div id="div2" {% if not div2_visible %}style="display: none;"{% endif %} >
+                <div class="sepetim">
+                    <h1>Kartlarım</h1>
+                 </div>
+                     <div class="sepet">
+                         <div class="sepet-icerik">
+                           <table id="myTable" class="sepet-tablo">
+                             <thead>
+                               <tr>
+                                 <th class="urun-gorsel">Kart Numarası</th>
+                                 <th class="urun-adi">Kart Adı</th>
+                                 <th class="urun-fiyat">Tarih</th>
+                                 <th class="urun-miktar">Güvenlik Kodu</th>
+                                 <th ></th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                              {% for kartim in kartlarim %}
+                               <tr>
+                                 <td class="urun-adi">{{ kartim.numara }}</td>
+                                 <td class="urun-fiyat">{{ kartim.isim }}</td>
+                                 <td class="urun-miktar">{{kartim.tarih}}</td>
+                                 <td class="urun-toplam">{{ kartim.guvenlik_kodu }}</td>
+                                    <td >
+                                        {% csrf_token %}
+                                        <a  href="{% url 'kartsil' numara=kartim.numara %}" type="button">
+                                          <i class="bi bi-trash"></i>
+                                        </a>
+                                    </td>
+                                 {% endfor %}  
+                               </tr> 
+                                        
+                             </tbody>
+                           </table>
+                         </div>
+                       </div>
+              </div>
+              <div id="div3" {% if not div3_visible %}style="display: none;"{% endif %}>
+                <div class="bakiye">
+                  <img src="{% static 'img\para.png' %}">
+               <h3>Bakiye:{{ bakiyem }} TL</h3>   
+               </div>
+               <div class="bakiye_karti">
+                <h2>Kartlarım</h2>
+                {% for kartim in kartlarim %}
+                <div class="kutucuk">
+                <table class="kutucuk-tablo">
+                  <tbody>
+                    <tr>
+                      {% csrf_token %}
+                      <td>{{ kartim.numara }}</td>
+                      <td>{{ kartim.guvenlik_kodu }}</td>
+                      <td>
+                      <input type="checkbox" id="gizlilikKabul" name="selected_item" value="{{kartim.numara}}" onclick="uncheckOtherBoxes('{{kartim.numara}}')" />
+                    </td> 
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              {% endfor %}
+              </div>
+              <form class="bakiye_ekle" method="post" action="{% url 'bakiye_ekle' %}">
+                {% csrf_token %}
+                <input  name="bakiye_input" id="bakiye_input" required>
+                <button  type="submit">Bakiye Ekle</button>
+              </form>
+               </div>
+              </div>
+              </div>      
+              
+        <div class="picture">
+         <img src="{% static 'img\Logo.png' %}">
+        </div>
+        <div class="siparis">
+         <h3>Sipariş Tutarı</h3>
+         <ul>  
+            <li>Ürün fiyatı &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{toplam_fiyat}} TL  </li>
+            <li>Kargo Bedeli &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{toplam_kargo_bedeli}} TL  </li>
+            <li>Sipariş Toplam  &nbsp; &nbsp; &nbsp;{{toplam}} TL </li> 
+          </ul>
+        </div>
+        <div class="iletisim">
+            <div class="teslimat">
+         <img src="{% static 'img\teslimat.png' %}">
+         </div>
+         <div class="adam">
+         <img src="{% static 'img\adam.png' %}">
+        </div>
+        <div class="guvenli">
+          <img src="{% static 'img\guvenli.png' %}">
+        </div>
+        </div>
+        <div class="onay">
+            <button onclick="sayfayaYonlendir()" name="Onayla" class="sipariset">Sepeti Onayla</button>
+        </div>
+        <script>
+            function kabulEdildi() {
+                var checkbox = document.getElementById("gizlilikKabul");
+                if (!checkbox.checked) {
+                    alert("Lütfen şartları kabul ediniz");
+                }
+            }
+        
+            function sayfayaYonlendir(){
+              var section = window.location.hash.substr(1);
+                if(section === "section3"){
+                  fetch("/bakiyeden_al/")
+    .then(response => response.json())
+    .then(data => {
+      var bakiyeKontrol = data.bakiye_kontrol;
+
+      if (bakiyeKontrol) {
+        window.location.href = "/tamamlanma.html";
+      } else {
+        alert("Bakiye yetersiz!");
+      }
+    })
+    .catch(error => {
+      console.error("Hata:", error);
+    });
+                      }
+                else{
+                  window.location.href = "/tamamlanma.html";
+                }      
+                    
+                return false;
+            }
+
+            window.onload = baslat;
+
+            function gecis(divIndex){
+
+                var div1 = document.getElementById('div1');
+                var div2 = document.getElementById('div2');
+                var div3 = document.getElementById('div3');
+                if(divIndex === 1){
+                    div1.style.display='block';
+                    div2.style.display='none';
+                    div3.style.display='none';
+                }
+                else if(divIndex === 2){
+                    div2.style.display='block';
+                    div1.style.display='none';
+                    div3.style.display='none';
+                }
+
+                else if(divIndex === 3){
+                    div3.style.display='block';
+                    div1.style.display='none';
+                    div2.style.display='none';
+                }
+            }
+
+            function uncheckOtherBoxes(selectedItemId) {
+        var checkboxes = document.getElementsByName('selected_item');
+        
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].value !== selectedItemId) {
+                checkboxes[i].checked = false;
+            }
+        }
+    }
+
+        </script>
+    </body>
+</html>

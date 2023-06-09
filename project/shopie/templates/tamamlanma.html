@@ -1,0 +1,127 @@
+{% load static %}
+<html>
+    <head>
+        <style>
+   
+        body {
+            background-color:#F9F6F7;
+        }   
+        
+        .picture{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 20vh;
+    }
+        .picture img{
+            max-width: 100%;
+            max-height: 100%;
+    }  
+
+        .sepet-bos {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align:center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+          }
+          
+          .sepet-baslik {
+            font-size: 24px;
+            margin-bottom: 10px;
+          }
+          
+          .alisverise-devam {
+            display: inline-block;
+            background-color: #B27894;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 30px;
+          }
+          
+          .alisverise-devam:hover {
+            background-color: lightcoral;
+          }
+          
+          .alisverise-devam:focus {
+            outline: none;
+          }
+
+          .iletisim{
+          width:100%;
+          height:200px;
+          margin:0 auto;
+          margin-left:0px;
+          margin-top:230px;
+          padding: 20px;
+          background-color: #B27894;
+          border-radius: 7px;  
+          }
+
+          .adam{
+                    margin:0 auto;
+                    margin-left:240px;
+                    margin-top:-210px;
+                }
+
+          .adam img{
+                    max-width:16%;
+                    max-height:16%;
+                    border-radius:50%;
+                }
+
+                .teslimat{
+                    margin:0 auto;
+                    margin-left:1100px;
+                    margin-top:-13px;
+                }
+
+                .teslimat img{
+                    max-width:72%;
+                    max-height:72%;
+                    border-radius:50%;
+                }
+
+                .guvenli {
+                    margin:0 auto;
+                    margin-left:630px;
+                    margin-top:-150px;
+                }
+
+                .guvenli img{
+                    max-width:35%;
+                    max-height:35%;
+                    border-radius:10%;
+                }
+
+        </style>   
+        <script>
+          function sayfayaYonlendir() {
+          window.location.href ="http://127.0.0.1:8000/";
+          }
+        </script>   
+    </head>
+    <body>
+ <diV class="picture">
+    <img src="{% static 'img\Logo.png' %}">
+ </diV>
+   <div class="sepet-bos">
+    <h2 class="sepet-baslik">Siparişiniz Onaylanmıştır</h2>
+    <a onclick="sayfayaYonlendir()" class="alisverise-devam">Ana Sayfaya Dön</a>
+  </div>
+  <div class="iletisim">
+    <div class="teslimat">
+      <img src="{% static 'img\teslimat.png' %}">
+      </div>
+      <div class="adam">
+      <img src="{% static 'img\adam.png' %}">
+     </div>
+     <div class="guvenli">
+       <img src="{% static 'img\guvenli.png' %}">
+     </div>
+  </div>
+</body>
+ </html> 

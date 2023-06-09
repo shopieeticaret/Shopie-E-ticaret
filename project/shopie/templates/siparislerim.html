@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siparişlerim</title>
+    <style>
+        body {
+            background-color: #F7F7F7;
+        }
+        .image-container {
+            position: relative;
+            display:grid; /* Görsel ve metin öğelerini yatay olarak hizalamak için */
+        }
+        .image-text {
+            position: absolute;
+            top: 5px;
+            margin-left: 10px;
+            color: grey;
+            padding: 5px;
+            letter-spacing: 1.25px;
+            text-decoration:blink;
+        }
+        .logo {
+            width: 23%;
+            height: 20%;
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 10px;
+            padding: 50px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-container > div {
+            background-color:#F7F7F7;
+            border: 3px solid grey;
+            height: 175px;
+            margin-left:50px;  
+            margin-right: 50px;          
+        
+        }
+        div img {
+            display: block;
+            margin-left: 10px; /* sol kenarı sıfırlar */
+            margin-right: auto; /* sağ kenarı merkezler */
+            margin-top:60px;
+        }
+        .urunBoyutu{
+            width:100px;
+            height:100px;
+            border: 2px solid grey;
+        }
+        button {
+            border-radius: 12px;
+            border: 2px solid grey;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: #C59090;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .btn-like {
+            color: #F7F7F7;
+            padding: 2px 4px;
+            font-size: 12px;
+            border-radius: 2px;
+            cursor: pointer;
+        }
+        .btn-like:hover {
+            background-color: #C59090;
+            border: 2px solid #F7F7F7;
+        }
+        footer {
+            background-color: #666;
+            color: #F7F7F7;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 70px;
+            padding: 10px;
+            display: flex;
+            height: 20%;
+        }
+        .column {
+            padding: 0 8px;
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+            }
+        }
+        a,h2{
+            color: #C59090;
+        }
+    </style>
+  </head>
+  <body>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <div>
+        <img src="/static/shopielogo.jpeg" alt="logo" class="logo">
+        <h4 style="color: #C59090;text-align:center;margin-right:auto;margin-left:auto;margin-top:0px;"><i>Güvenli Alışverişin Adresi</i></h4>
+    </div>
+    <div class="siparisbox flex-container">
+        <div class="image-container">
+            <img src="/static/urun.jpeg" alt="urun" class="urunBoyutu">
+            <span><button id="siparisdurumu" class="image-text"><a href="#"> <i class=" fa fa-thumbs-up btn-like"></i></a><b>Sipariş Durumu:</b>
+                <span><b>Alındı</b></span>   
+            </button>
+            <div></div>
+        </span>
+        </div>
+    </div>
+    <br>
+    <div class="siparisbox flex-container">
+        <div class="image-container">
+            <img src="/static/urun.jpeg" alt="urun" class="urunBoyutu">
+            <span><button id="siparisdurumu" class="image-text"><a href="#"> <i class=" fa fa-thumbs-up btn-like"></i></a><b>Sipariş Durumu:</b>
+                <span><b>Alındı</b></span>   
+            </button>
+        </span>
+        </div>
+    </div>
+    <br>
+    <div class="siparisbox flex-container">
+        <div class="image-container">
+            <img src="/static/urun.jpeg" alt="urun" class="urunBoyutu">
+            <span><button id="siparisdurumu" class="image-text"><a href="#"> <i class=" fa fa-thumbs-up btn-like"></i></a><b>Sipariş Durumu:</b>
+                <span><b>Alındı</b></span>   
+            </button>
+            <div></div>
+        </span>
+        </div>
+    </div>
+    <br>
+    <div class="siparisbox flex-container">
+        <div class="image-container">
+            <img src="/static/urun.jpeg" alt="urun" class="urunBoyutu">
+            <span><button id="siparisdurumu" class="image-text"><a href="#"> <i class=" fa fa-thumbs-up btn-like"></i></a><b>Sipariş Durumu:</b>
+                <span><b>Alındı</b></span>   
+            </button>
+            <div></div>
+        </span>
+        </div>
+    </div>
+    <br>
+    <div class="siparisbox flex-container">
+        <div class="image-container">
+            <img src="/static/urun.jpeg" alt="urun" class="urunBoyutu">
+            <span><button id="siparisdurumu" class="image-text"><a href="#"> <i class=" fa fa-thumbs-up btn-like"></i></a><b>Sipariş Durumu:</b>
+                <span><b>Alındı</b></span>   
+            </button>
+            <div></div>
+        </span>
+        </div>
+    </div>
+    <br>
+    <footer>   
+        <div class="column">
+          <h2>Contact Us</h2>
+          <form action="post">
+            <input type="email" placeholder="email adresinizi giriniz">
+            <button type="submit">Send</button>
+          </form>
+          <h2>Adress</h2>
+          <p>Nilüfer/BURSA</p>
+          <ul>
+            <a href="#"><i class=" fa fa-facebook" style="height: 40px; width: 40px;"></i></a>
+            <a href="#"><i class="fa fa-twitter"  style="height: 40px; width: 40px;"></i></a>
+            <a href="#"><i class="fa fa-google-plus"  style="height: 40px; width: 40px;"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"  style="height: 40px; width: 40px;"></i></a>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>About Us</h2>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+        </div> 
+        <div style="clear:both"></div>
+      </footer>
+</html>

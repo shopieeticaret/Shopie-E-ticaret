@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+/* Sets the background color of the body to blue. Sets font to Rubik */
+
+body {
+    background-color: white;
+}
+
+div{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Aligns the heading text to the center. #f7f7f7*/
+
+h1 {
+    text-align: center;
+}
+
+.test {
+    border-style: solid;
+    width: max-content;
+}
+
+.başlık {
+    background-color: #f7f7f7;
+    color: #B27894;
+    cursor: pointer;
+    padding: 18px;
+    width: 764px;
+    text-align: left;
+    transition: 0.4s;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.container {
+    background-color: #f7f7f7;
+    color: #B27894;
+    cursor: pointer;
+    padding: 18px;
+    width: 764px;
+    text-align: left;
+    transition: 0.4s;
+    border-bottom-style: solid;
+    border-width: 1px;
+}
+
+.buton {
+    border: none;
+    background-color: #f7f7f7;
+    color: #B27894;
+    cursor: pointer;
+    padding: 18px;
+    width: 780px;
+    text-align: center;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+/* Sets the width for the accordion. Sets the margin to 90px on the top and bottom and auto to the left and right */
+
+.accordion {
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+}
+
+/* Positions the plus sign 5px from the right. Centers it using the transform property. 
+
+.accordion .label::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    right: 400px;
+    font-size: 30px;
+    transform: translateY(-20%);
+}*/
+
+/* Hides the content (height: 0), decreases font size, justifies text and adds transition */
+
+.accordion .content {
+    position: relative;
+    background: #f7f7f7;
+    height: 0;
+    font-size: 16px;
+    text-align: justify;
+    width: 700px;
+    overflow: hidden;
+    transition: 0.5s;
+    left: 20px;
+}
+
+.accordion .content .content_holder {
+    position: relative;
+    background: #f7f7f7;
+    height: 0;
+    font-size: 16px;
+    text-align: justify;
+    width: 600px;
+    overflow: hidden;
+    transition: 0.5s;
+    left: 20px;
+}
+
+/* Adds a horizontal line between the contents */
+
+.accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(130, 130, 130);
+}
+
+/* Unhides the content part when active. Sets the height */
+
+.accordion .container.active .content {
+    height: auto;
+}
+
+.accordion .container.active .content .content_holder {
+    height: auto;
+}
+
+/* Changes from plus sign to negative sign once active 
+
+.accordion .container.active .label::before {
+    content: '-';
+    font-size: 30px;
+}*/
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
+
+.foruMain {
+    display: flex;
+    width: 800px;
+    margin: 90px auto;
+    color: black;
+    background-color: white;
+    padding: 45px 45px;
+    text-indent: 15px;
+}
+
+.forum {
+    width: 50%;
+}
+
+.hızlıÇözümler {
+    width: 50%;
+    text-align: center;
+    align-content: center;
+}
+
+.miniFAQ {
+    border: solid;
+    border-radius: 15px;
+    border-width: 1px;
+    background-color: #F9F6F7;
+    color: #444;
+    cursor: pointer;
+    padding: 1px;
+    width: 320px;
+    text-align: center;
+}
+
+.çözümButon {
+    border-width: 1px;
+    background-color: #F9F6F7;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 320px;
+    text-align: center;
+}
+
+.gönder {
+    color: yellow;
+    background-color: red;
+    padding: 10px;
+}
+
+.normaInput {
+    width: 350px;
+    background-color: #F9F6F7;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(135, 135, 135);
+    height: 30px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.longInput {
+    width: 350px;
+    height: 300px;
+    background-color: #F9F6F7;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(135, 135, 135);
+    padding: 5px;
+    border-radius: 15px;
+}

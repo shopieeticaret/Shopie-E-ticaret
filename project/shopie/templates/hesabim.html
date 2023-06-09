@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hesabım</title>
+    <style>
+        body {
+            background-color: #F7F7F7;
+        }
+        .logo {
+            width: 23%;
+            height: 20%;
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+            margin-top: 5%;
+        }
+        div {
+            text-align: center; 
+            margin-bottom: 25px;
+        }
+        input {
+            background-color: #D9D9D9;
+            border: 2px solid #D9D9D9;
+            color: #B27894 !important; /* !important ile öncelik artırılır */
+            width: 20%;
+            height: 25px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 30px;
+        }
+        .button{
+            background-color: #C59090;
+            border: 2px solid #D9D9D9;
+            color: #D9D9D9 !important;
+            width: 20%;
+            height: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+
+        }
+        button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            text-align: center; /* Yatayda ortalamak için */
+            /* veya */
+            display: flex; /* Yatay ve dikeyde ortalamak için */
+            justify-content: center;
+            align-items: center;
+        }
+
+        button:active {
+            background-color: #C59090;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+        .sifirla{
+            display: block;
+            margin-left: 39.5%;
+        }
+        .inline{
+            display: inline-block;
+            vertical-align:text-bottom;
+            color: #C59090;
+        }
+        .userposition{
+            vertical-align: middle;
+        }
+        .homepage{
+            position: fixed;
+            bottom: 5px;
+            left: 0;
+            float: left;
+            color: #B27894;
+        }
+        footer {
+            background-color: #666;
+            color: #F7F7F7;
+            width: 100%;
+            margin-top: 100px;
+            margin-bottom: 70px;
+            padding: 10px;
+            display: flex;
+            height: 20%;
+        }
+        .column {
+            padding: 0 8px;
+            float: left;
+            width: 50%;
+            text-align: center;
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+            width: 100%;
+            }
+        }
+        a,h2{
+            color: #C59090;
+        }
+    </style>
+  </head>
+  <body>
+    <div>
+        <img src="/static/shopielogo.jpeg" alt="logo" class="logo">
+    </div>
+    <div>
+      <img src="/static/useer.png" alt="user" width="50px" height="40px" class="inline userposition" />
+      &ensp;
+      {% load account %}
+      <label for="user" class="inline">Merhaba {{ user.username }} ,</label>
+    </div>
+    <!--{ % if user.is_authenticated % } -->
+    <form action="{% url 'siparislerim' %}" method="post">
+      {% csrf_token %}
+      <button id="siparislerim" class="button">Siparişlerim</button>
+    </form>
+    <button id="kuponlarim" class="button">Kuponlarim</button>
+    <button id="bilgilerim" class="button">Kullanıcı Bilgilerim</button>
+    <button id="kartlarim" class="button">Kayıtlı Kartlarım</button>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <form action="{% url 'logoutview' %}" method="post">
+      {% csrf_token %}
+      <button id="cikisyap" class="button">Çıkış yap</button>
+    </form>
+
+    <footer>   
+        <div class="column">
+          <h2>Contact Us</h2>
+          <form action="post">
+            <input type="email" placeholder="email adresinizi giriniz">
+            <button type="submit">Send</button>
+          </form>
+          <h2>Adress</h2>
+          <p>Nilüfer/BURSA</p>
+          <ul>
+            <a href="#"><i class=" fa fa-facebook" style="height: 40px; width: 40px;"></i></a>
+            <a href="#"><i class="fa fa-twitter"  style="height: 40px; width: 40px;"></i></a>
+            <a href="#"><i class="fa fa-google-plus"  style="height: 40px; width: 40px;"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube"  style="height: 40px; width: 40px;"></i></a>
+          </ul>
+        </div>
+        <div class="column">
+          <h2>About Us</h2>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+          <ul>
+            <a href="hakkımızda.html">Hakkımızda</a>
+          </ul>
+        </div> 
+        <div style="clear:both"></div>
+      </footer>
+  </body>
+</html>

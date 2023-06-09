@@ -1,0 +1,346 @@
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+      <style>
+body{
+    background-color:#F9F6F7;
+}  
+
+.bakiye {
+  max-width: 200px;
+  max-height:5px;
+  margin: 0 auto;
+  margin-left:1000px;
+  margin-top:0px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.bakiye img{
+  margin: 0 auto;
+  max-width:20%;
+  max-height:20%;
+  margin-top:-17px;
+  margin-left:-12px;
+}
+
+.bakiye h2{
+  margin: 0 auto;
+  margin-top:-35px;
+  margin-left:40px;
+}
+
+.sepet {  
+  max-width: 800px;
+  margin: 0 auto;
+  margin-left:80px;
+  margin-top:20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.sepetim {  
+  max-width: 800px;
+  max-height: 70px;
+  margin: 0 auto;
+  margin-left:80px;
+  margin-top:80px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.sepetim img{
+  margin: 0 auto;
+  max-width:20%;
+  max-height:20%;
+  margin-top:-55px;
+  margin-left:-50px;
+}
+
+.sepetim h1{
+  margin: 0 auto;
+  margin-top:-85px;
+  margin-left:100px;
+}
+
+.iletisim{
+  width:100%;
+  height:200px;
+  margin:0 auto;
+  margin-left:0px;
+  margin-top:120px;
+  padding: 20px;
+  background-color:#B27894;
+  border-radius: 7px;  
+}
+
+.sepet-baslik {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sepet-icerik {
+  overflow-x: auto;
+}
+
+.sepet-tablo {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sepet-tablo th,
+.sepet-tablo td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.urun-gorsel {
+  width: 80px;
+}
+
+.urun-adi {
+  width: 200px;
+}
+
+.urun-fiyat,
+.urun-miktar,
+.urun-toplam {
+  width: 100px;
+}
+
+.urun-miktar input {
+  width: 40px;
+  padding: 5px;
+}
+
+.picture{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 20vh;
+    }
+.picture img{
+  max-width: 100%;
+  max-height: 100%;
+}    
+
+.sepet-altbilgi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.sepet-temizle,
+.odeme-yap {
+  background-color: #B27894;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}    
+
+.sepet-temizle:hover{
+  background-color: lightcoral;
+}
+.odeme-yap:hover{
+  background-color: lightcoral;
+}
+
+.siparis {
+  position:absolute;
+  top:425px;
+  max-width: 350px;
+  height:250px;
+  margin: 0 auto;
+  margin-left:1000px;
+  padding: 25px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align:center;
+}
+
+.siparis ul {
+    list-style-type: none;
+    text-align:left;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .siparis li {
+    margin-top: 25px;  
+    font-size:14px;
+  }
+
+                .shortcut-buttons {
+                display: block;
+                justify-content: center;
+                text-align: center;
+                margin-bottom: 25px;
+                }
+
+                .shortcut-buttons a {
+                display: inline-block;
+                padding: 10px 15px;
+                background-color: #B27894;
+                color:white;
+                text-decoration: none;
+                border-radius: 4px;
+                transition: background-color 0.3s ease;
+                }
+
+                .shortcut-buttons a:hover {
+                background-color: #20F2F9;
+                }
+                .adam{
+                    margin:0 auto;
+                    margin-left:240px;
+                    margin-top:-210px;
+                }
+
+                 .adam img{
+                    max-width:16%;
+                    max-height:16%;
+                    border-radius:50%;
+                }
+
+                .teslimat{
+                    margin:0 auto;
+                    margin-left:1100px;
+                    margin-top:-13px;
+                }
+
+                .teslimat img{
+                    max-width:72%;
+                    max-height:72%;
+                    border-radius:50%;
+                }
+
+                .guvenli {
+                    margin:0 auto;
+                    margin-left:630px;
+                    margin-top:-150px;
+                }
+
+                .guvenli img{
+                    max-width:35%;
+                    max-height:35%;
+                    border-radius:10%;
+                }
+        </style>
+        <script>
+         function Sepetitemizle() {
+        fetch("/sepeti-temizle/")  
+            .then(response => {
+                if (response.ok) {
+                    window.location.href="Bossepet.html";
+                } else {
+                    alert("Bir hata oluştu.");
+                }
+            })
+            .catch(error => {
+                console.error("Hata:", error);
+            });
+    }
+
+          
+          function Onayla() {
+            window.location.href ="odeme.html";
+          }
+        </script>
+    </head>
+    <body>
+      <div class="picture"> 
+        <img src="{% static 'img\Logo.png' %}">
+    </div> 
+   
+    <div class="bakiye">
+       <img src="{% static 'img\para.png' %}">
+    <h2>{{ bakiyem }} TL</h2>   
+    </div>
+    <div class="sepetim">
+       <img src="{% static 'img\sepet.png' %}">
+       <h1>Sepetim</h1>
+    </div>
+        <div class="sepet shortcut-buttons">
+            <div class="sepet-icerik">
+              <table id="myTable" class="sepet-tablo">
+                <thead>
+                  <tr>
+                    <th class="urun-gorsel">Ürün</th>
+                    <th class="urun-adi">Ürün Adı</th>
+                    <th class="urun-fiyat">Fiyat</th>
+                    <th class="urun-miktar">Miktar</th>
+                    <th class="urun-toplam">Kargo Bedeli</th>
+                    <th class="urun-toplam">Toplam</th>
+                    <th class="urun-sil"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for urun in urunler %}
+                  <tr>
+                    <td class="urun-gorsel">
+                      <img src="{{ urun.resim.url }}" alt="{{ urun.isim }} Resmi">
+                    </td>
+                    <td class="urun-adi">{{ urun.isim }}</td>
+                    <td class="urun-fiyat">{{ urun.fiyat }}</td>
+                    <td class="urun-miktar">{{urun.sayi}}</td>
+                    <td class="urun-toplam">{{ urun.kargo_bedeli }}</td>
+                    <td class="urun-toplam">{{ urun.urun_fiyat }}</td>
+                    <td class="urun-sil">
+                      {% csrf_token %}
+                      <a class="urun-sil-butonu" href="{% url 'sil' isim=urun.isim%}" type="button">
+                        <i class="bi bi-trash"></i>
+                      </a>
+                    </td>
+                    {% endfor %}  
+                  </tr> 
+                           
+                </tbody>
+              </table>
+            </div>
+            <div class="sepet-altbilgi">
+              <div class="sepet-toplam">
+              </div>
+              <div class="sepet-islemler">
+                <button class="sepet-temizle" onclick="Sepetitemizle()">Sepeti Temizle</button>
+                <button class="odeme-yap" onclick="Onayla()">Sepeti Onayla</button>
+              </div>
+            </div>
+          </div>
+          <div class="siparis">
+            <h3>Sipariş Özeti</h3>
+            <ul>  
+              <li>Ürün fiyatı &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{toplam_fiyat}}   </li>
+              <li>Kargo Bedeli &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{toplam_kargo_bedeli}} TL  </li>
+              <li>Sipariş Toplam  &nbsp; &nbsp; &nbsp;{{toplam}} TL </li> 
+            </ul>
+          </div>
+          <div class="iletisim">
+            <div class="teslimat">
+              <img src="{% static 'img\teslimat.png' %}">
+              </div>
+              <div class="adam">
+              <img src="{% static 'img\adam.png' %}">
+             </div>
+             <div class="guvenli">
+               <img src="{% static 'img\guvenli.png' %}">
+             </div>
+          </div>
+        
+</html>
