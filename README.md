@@ -2,6 +2,8 @@
  Projemiz olan bu internet sitesi her türlü alandan popüler firmaların (spor,sanat,giyim,kozmetik,teknoloji vb.) en güncel ve kaliteli ürünlerini bulabileceğiniz, basit ve kullanışlı arayüzü ile de satın alma ve diğer işlemlerinizigerçekleştirebileceğiniz bir E-ticaret sitesidir. Sitemize ait kodlara shopie branchi üzerinden ulaşabilirsiniz. 
  https://github.com/shopieeticaret/Shopie-E-ticaret/tree/shopie
  
+ # Shopie Tanıtım Videosu
+ https://www.youtube.com/watch?v=4SskN2ntP_c
  
  ## Projenin Amacı ve Hedefleri
  - Bütün kullanıcıların faydalanabileceği ve sorun yaşamayacağı güvenilir bir alışveriş ortamı sunmak.
